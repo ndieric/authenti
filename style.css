@@ -118,5 +118,46 @@ header .footer {
   position: fixed;
   top: 25px;
   right: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: var(--themeColor);
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  z-index: 999;
+  display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+  header {
+    left: -300px;
+  }
+  header .footer {
+    left: -300px;
+  }
+  #MenuBtn {
+    display: block;
+  }
+}
+
+/* toggle header*/
+
+.mobile-nav-active header {
+  left: 0;
+}
+
+.mobile-nav-active header .footer {
+  left: 0;
 }
 /*================= hearder end==============*/
+
+/* Main section*/
+
+main {
+  margin-left: 300px;
+  background-color: red;
+  transition: 0.3s;
+}
