@@ -13,9 +13,37 @@
 /* global variable*/
 
 :root {
-  --sideBGColor: #040b14a;
-  --sideBGColor: ;
-  --sideBGColor: ;
-  --sideBGColor: ;
-  --sideBGColor: ;
+  --sideBGColor: #040b14;
+  --themeColor: #00a7be;
+  --iconBGColor: #2c2f3c;
+  --textColor: #525252;
+  --bgColor: #f7f7f7;
 }
+
+/*================= hearder start==============*/
+header {
+  height: 100vh;
+  width: 300px;
+  padding: 15px 30px;
+  background-color: var(--sideBGColor);
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+header .profile {
+  text-align: center;
+  margin: 10px 0;
+}
+
+header .profile img {
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid var(--iconBGColor);
+}
+
+/*================= hearder end==============*/
