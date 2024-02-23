@@ -32,7 +32,7 @@ header {
   top: 0;
   bottom: 0;
   transition: 0.4s;
-  z-index: 0;
+  z-index: 99;
 }
 
 header .profile {
@@ -66,4 +66,50 @@ header .profile .social-icons a:hover {
   background-color: var(--themeColor);
 }
 
+header nav {
+  margin-top: 30px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+/* navbar*/
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 10px;
+  margin: 7px 0;
+  color: lightgray;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+header nav ul li a i {
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover i {
+  color: var(--themeColor);
+}
+
+header nav ul li .active i {
+  color: var(--themeColor);
+}
+
+header .footer {
+  text-align: center;
+  background-color: var(--sideBGColor);
+  width: 300px;
+  color: lightgray;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
 /*================= hearder end==============*/
