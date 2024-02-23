@@ -46,4 +46,24 @@ header .profile img {
   border: 10px solid var(--iconBGColor);
 }
 
+header .profile h1 {
+  color: white;
+  font-weight: 600;
+}
+header .profile .social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  background-color: var(--iconBGColor);
+  color: white;
+  margin: 1.5px;
+  transition: 0.4s;
+}
+header .profile .social-icons a:hover {
+  background-color: var(--themeColor);
+}
+
 /*================= hearder end==============*/
