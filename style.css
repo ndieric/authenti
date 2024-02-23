@@ -190,3 +190,48 @@ main {
   top: 0;
   left: 0;
 }
+
+#home .home-row {
+  z-index: 1;
+}
+
+#home .home-row h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  line-height: 70px;
+}
+
+#home .home-row h1 span {
+  color: var(--themeColor);
+}
+#home .home-row p {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#home .home-row p span {
+  border-bottom: 4px solid var(--themeColor);
+}
+
+@media only screen and (max-width: 670px) {
+  #home {
+    padding: 30px;
+  }
+  #home .home-row h1 {
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 70px;
+  }
+
+  #home .home-row br {
+    display: none;
+  }
+  #home .home-row p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
