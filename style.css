@@ -541,4 +541,61 @@ main {
   padding: 0 20px 0 20px;
   border-left: 2px solid var(--themeColor);
 }
+
+#resume .resume-row .resume-cols .my-edu::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: white;
+}
+
+#resume .resume-row .resume-cols .sp-box {
+  padding: 4px 22px;
+  background-color: lightblue;
+  color: var(--textColor);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+#resume .resume-row .resume-cols .my-edu span + p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#resume .resume-row .resume-cols .my-edu span + p + p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#resume .resume-row .resume-cols .pro-exp {
+  padding: 0 20px 0 20px;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+#resume .resume-row .resume-cols .pro-exp::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: white;
+}
 /*----------------------resume section end---------------------------*/
