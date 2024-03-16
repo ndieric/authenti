@@ -16,7 +16,7 @@
   --sideBGColor: #040b14;
   --themeColor: #00a7be;
   --iconBGColor: #2c2f3c;
-  --textColor: #525252;
+  --textColor: #353535;
   --bgColor: #f7f7f7;
 }
 
@@ -367,3 +367,178 @@ main {
 }
 
 /* About section end*/
+
+/*----------------------------------------------------------------------*/
+
+#fact {
+  padding: 50px 30px;
+  background-color: white;
+}
+
+#fact .fact-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  grid-gap: 30px;
+}
+
+#fact .fact-row .fact-box i {
+  color: var(--themeColor);
+  font-size: 40px;
+}
+#fact .fact-row .fact-box strong {
+  color: var(--sideBGColor);
+  font-size: 30px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+#fact .fact-row .fact-box p {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 16px;
+}
+@media only screen and (max-width: 700px) {
+  #fact {
+    padding: 40px 15px;
+    background-color: white;
+  }
+  #fact .fact-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #fact .fact-row .fact-box i {
+    font-size: 30px;
+  }
+  #fact .fact-row .fact-box strong {
+    font-size: 20px;
+  }
+  #fact .fact-row .fact-box p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------*/
+
+/*==================================skills section start===============================*/
+
+#skill {
+  padding: 50px 30px;
+}
+
+#skill .skill-row {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+#skill .skill-row .skill-box .skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+#skill .skill-row .skill-box .skill-info h2 {
+  color: var(--sideBGColor);
+  font-weight: 600;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#skill .skill-row .skill-box .skill-outter-line {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+#skill .skill-row .skill-box .skill-outter-line .skill-inner-line {
+  height: 10px;
+  background-color: var(--themeColor);
+  border-radius: 20px;
+}
+
+/*==================================skills section end===============================*/
+
+/* mobile view*/
+
+@media only screen and (max-width: 450px) {
+  #skill {
+    padding: 50px 15px;
+  }
+
+  #skill .skill-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------resume section start---------------------------*/
+#resume {
+  padding: 70px 30px;
+  background-color: white;
+}
+
+#resume .resume-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+}
+#resume .resume-row .resume-cols {
+  flex-basis: 50%;
+}
+#resume .resume-row .resume-cols h2 {
+  color: var(--sideBGColor);
+  font-weight: 600;
+  font-size: 25px;
+  margin: 15px 0;
+}
+#resume .resume-row .resume-cols .my-info {
+  padding: 0 20px 0 20px;
+  margin: 20px 0;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+#resume .resume-row .resume-cols .my-info::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: white;
+}
+
+#resume .resume-row .resume-cols H3 {
+  color: var(--sideBGColor);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#resume .resume-row .resume-cols .my-info p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0;
+}
+#resume .resume-row .resume-cols .my-info ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+#resume .resume-row .resume-cols .my-edu {
+  padding: 0 20px 0 20px;
+  border-left: 2px solid var(--themeColor);
+}
+/*----------------------resume section end---------------------------*/
