@@ -582,7 +582,7 @@ main {
 }
 
 #resume .resume-row .resume-cols .pro-exp {
-  padding: 0 20px 0 20px;
+  padding: 0 20px 10px;
   border-left: 2px solid var(--themeColor);
   position: relative;
 }
@@ -598,4 +598,42 @@ main {
   border: 2px solid var(--themeColor);
   background-color: white;
 }
+
+#resume .resume-row .resume-cols .pro-exp p {
+  color: var(--textColor);
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+}
+#resume .resume-row .resume-cols .pro-exp ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+  #resume {
+    padding: 50px 15px;
+  }
+  #resume .resume-row {
+    flex-direction: column;
+  }
+  #resume .resume-row .resume-cols {
+    flex-basis: 50%;
+  }
+}
 /*----------------------resume section end---------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*=======================protofolio start section =====================*/
+#portofolio {
+  padding: 70px 30px;
+}
+#portofolio .port-row {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+/*=======================protofolio start section =====================*/
