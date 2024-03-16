@@ -253,7 +253,7 @@ main {
   border-radius: 3px;
 }
 
-#about .divider p {
+.sub-param {
   color: var(--textColor);
   font-size: 15px;
   letter-spacing: 0.4px;
@@ -304,6 +304,66 @@ main {
 }
 #about .about-col .info-col .icon-list-col .icon-list ul li i {
   color: var(--themeColor);
+}
+#about .about-col .info-col .icon-list-col .icon-list ul li strong {
+  color: var(--sideBGColor);
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li span {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 830px) {
+  #about {
+    padding: 50px 10px;
+  }
+  #about .divider p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-align: justify;
+  }
+
+  #about .about-col {
+    flex-direction: column;
+  }
+
+  #about .about-col .img-col img {
+    width: 50%;
+  }
+  #about .about-col .info-col h2 {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  #about .about-col .info-col p {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  #about .about-col .info-col .icon-list-col {
+    flex-direction: column;
+    gap: 0;
+  }
+  #about .about-col .info-col .icon-list-col .icon-list ul li {
+    margin: 10px 0;
+  }
+  #about .about-col .info-col .icon-list-col .icon-list ul li strong {
+    font-weight: 500;
+    margin-right: 0px;
+  }
+  #about .about-col .info-col .icon-list-col .icon-list ul li span {
+    font-weight: 400;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #about .about-col .img-col img {
+    width: 90%;
+  }
 }
 
 /* About section end*/
