@@ -809,4 +809,30 @@ main {
 }
 
 #contact .contact-row .contact-left .icon-box .icon i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  text-align: center;
+  line-height: 47px;
+  font-size: 20px;
+  color: var(--themeColor);
+  transition: 0.5s;
+}
+
+#contact .contact-row .contact-left .icon-box:hover .icon i {
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+}
+
+#contact .contact-row .contact-left .icon-box .info h4 {
+  font-size: 20px;
+  color: var(--sideBGColor);
+  font-weight: 600;
+}
+
+#contact .contact-row .contact-left .icon-box .info h4 + p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
 }
